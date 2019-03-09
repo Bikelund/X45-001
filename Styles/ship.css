@@ -1,0 +1,84 @@
+/* Ship content */
+.ship-content-box {
+    position: relative;
+    margin: 20px 0 0 50px;
+    width: 1100px;
+    height: 600px;
+    border: 3px solid #66ff66;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px #66ff66;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Transparent background */
+.ship-content-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1084px;
+    height: 586%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+.ship-content-box p {
+    margin: 0;
+    padding: 0 30px 20px;
+    font-size: 20px;
+}
+.ship-content-box h3 {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 30px;
+    font-weight: 400;
+}
+/* Images */
+.ship-image {
+    width: 100%;
+    height: 400px;
+    margin: 10px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mortzestus {
+    background-image: url(../Images/mortzestus.jpg);
+}
+#ship-imagebp1 {
+    background-image: url(../Images/ship2bp.jpg);
+    height: 100%;
+}
+#ship-image2 {
+    background-image: url(../Images/interior1.png);
+}
+#ship-image3 {
+    background-image: url(../Images/interior2.jpg);
+}
+#ship-image4 {
+    background-image: url(../Images/interior3.jpg);
+}
+#ship-image5 {
+    background-image: url(../Images/interior4.jpg);
+}
+#ship-image6 {
+    background-image: url(../Images/interior5.jpg);
+}
+
+/* Scrollbar for crew text */
+
+/* width */
+.ship-content-box::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+.ship-content-box::-webkit-scrollbar-track {
+    background: #000; 
+}
+/* Handle */
+.ship-content-box::-webkit-scrollbar-thumb {
+    background: #66ff66; 
+    box-shadow: 0px 0px 10px #66ff66;
+}

@@ -1,0 +1,97 @@
+/* Journey content */
+.journey-content-box {
+    position: relative;
+    margin: 20px 0 0 50px;
+    width: 1100px;
+    height: 600px;
+    border: 3px solid #66ff66;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px #66ff66;
+}
+/* Transparent background */
+.journey-content-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1084px;
+    height: 1120%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+.journey-content-box p {
+    margin: 0;
+    padding: 0 30px 20px;
+    font-size: 20px;
+}
+.journey-content-box h3 {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 30px;
+    font-weight: 400;
+}
+#dangers {
+    background-color: red;
+    color: #DEDEDE;
+    text-align: center;
+    text-shadow: none;
+    font-size: 24px;
+    padding: 20px 30px;
+}
+.dangers-container {
+    margin-bottom: 20px;
+    display: flex;
+}
+.danger-text {
+    width: 696px;
+}
+.danger-image {
+    position: sticky;
+    top: 40px;
+    width: 400px;
+    height: 480px;
+    margin: 20px 10px;
+    background-position: center;
+    background-size: cover;
+}
+#image-malfunction {
+    background-image: url(../Images/hal9000.jpg); /* HAL-9000 */
+    background-position: right;
+}
+#image-asteroid {
+    background-image: url(../Images/asteroids2.jpg);
+}
+#image-blackhole {
+    background-image: url(../Images/blackhole.jpg);
+}
+#image-timerift {
+    background-image: url(../Images/stargate-1.jpg);
+}
+#image-anomalie {
+    background-image: url(../Images/Spaceballs.jpg);
+}
+#image-pirate {
+    background-image: url(../Images/spacepirates.jpg);
+}
+#image-xenomorph {
+    background-image: url(../Images/xenomorph.png);
+}
+
+/* Scrollbar for journey text */
+
+/* width */
+.journey-content-box::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+.journey-content-box::-webkit-scrollbar-track {
+    background: #000; 
+}
+/* Handle */
+.journey-content-box::-webkit-scrollbar-thumb {
+    background: #66ff66; 
+    box-shadow: 0px 0px 10px #66ff66;
+}

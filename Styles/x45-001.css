@@ -1,0 +1,57 @@
+/* Planet content */
+.planet-content-box {
+    position: relative;
+    margin: 20px 0 0 50px;
+    width: 1100px;
+    height: 600px;
+    border: 3px solid #66ff66;
+    box-shadow: 0px 0px 10px #66ff66;
+    box-sizing: border-box;
+    display: flex;
+}
+/* Transparent background */
+.planet-content-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1096px;
+    height: 594px;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+/* Image */
+#planet {
+    width: 400px;
+    height: 594px;
+    background-image: url(../Images/x45-001.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#planet-text {
+    width: 700px;
+    overflow-y: scroll;
+}
+#planet-text p {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Scrollbar for planet text */
+
+/* width */
+#planet-text::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+#planet-text::-webkit-scrollbar-track {
+    background: #000; 
+}
+/* Handle */
+#planet-text::-webkit-scrollbar-thumb {
+    background: #66ff66; 
+    box-shadow: 0px 0px 10px #66ff66;
+}

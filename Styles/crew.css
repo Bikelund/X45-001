@@ -1,0 +1,122 @@
+/* Navigation */
+#crew-list {
+    list-style-type: none;
+    width: 1100px;
+    padding: 0;
+    margin: 50px 0 50px 50px;
+}
+#crew-list li {
+    display: inline;
+    margin-right: 10px;
+}
+#crew-list a {
+    text-decoration: none;
+    color: #66ff66;
+    text-shadow: 0px 0px 4px #66ff66;
+    border: 2px solid #66ff66;
+    padding: 10px 20px;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px #66ff66;
+}
+
+/* Crew content */
+.crew-content-box {
+    position: relative;
+    margin-left: 50px;
+    width: 1100px;
+    height: 500px;
+    border: 3px solid #66ff66;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #66ff66;
+}
+/* Transparent background */
+.crew-content-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1096px;
+    height: 494px;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+.crew-person {
+    height: 496px;
+}
+.crew-text {
+    width: 694px;
+    height: 494px;
+    overflow-y: scroll;
+}
+.crew-text p {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Images */
+.crew-image {
+    margin: 10px 0 10px 10px;
+    width: 400px;
+    height: 474px;
+}
+#crew1-img {
+    background-image: url(../Images/ellen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#crew2-img {
+    background-image: url(../Images/dallas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#crew3-img {
+    background-image: url(../Images/ash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#crew4-img {
+    background-image: url(../Images/lambert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#crew5-img {
+    background-image: url(../Images/kane.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#crew6-img {
+    background-image: url(../Images/parker.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#crew7-img {
+    background-image: url(../Images/brett.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Active */
+#crew-list a.active-name {
+    background: #66ff66;
+    color: #000;
+    text-shadow: none;
+}
+
+/* Scrollbar for crew text */
+
+/* width */
+.crew-text::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+.crew-text::-webkit-scrollbar-track {
+    background: #000; 
+}
+/* Handle */
+.crew-text::-webkit-scrollbar-thumb {
+    background: #66ff66; 
+    box-shadow: 0px 0px 10px #66ff66;
+}

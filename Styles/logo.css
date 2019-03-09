@@ -1,0 +1,46 @@
+/* Logo */
+#title {
+    font-family: alienFont;
+    color: #DEDEDE;
+    width: 500px;
+    height: 160px;
+    margin: 50px 0 50px 50px;
+    cursor: pointer;
+}
+#title > p {
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+}
+#x45 {
+    font-size: 100px;
+}
+#czar {
+    font-size: 35px;
+}
+#transit {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 112px;
+    left: 455px;
+}
+#transit p {
+    font-family: alienFontBold;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+}
+i {
+    border: solid #DEDEDE;
+    border-width: 0 36px 36px 0;
+    display: inline-block;
+    padding: 28px;
+}
+.arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 84px;
+    left: 540px;
+}

@@ -1,0 +1,72 @@
+html {
+	animation: animatedBackground 60s linear infinite;
+	background-image: url(../Images/space.png);
+    background-position: 0px 0px;
+	background-repeat: repeat-x;
+	height: 400px;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    width: 560px; 
+}
+/* Moving background animation */
+@keyframes animatedBackground {
+	from { 
+        background-position: 0 0; 
+    }
+	to { 
+        background-position: 79.5% 0; 
+    }
+}
+body {
+    font-family: ocr-a-std, monospace;
+    /* color: #41ff00; */ /* Green color */
+    /* color: #ffcc00; */ /* Lt. Amb */
+    color: #66ff66; /* Apple llc */
+}
+@font-face { /* Import font */
+    font-family: alienFont;
+    src: url(../Fonts/ALIEESBI.TTF);
+}
+@font-face { /* Import font */
+    font-family: alienFontBold;
+    src: url(../Fonts/ALIEESB.TTF);
+}
+main h2 {
+    font-size: 30px;
+    margin: 0 0 0 50px;
+}
+p, h2, h3 {
+    text-shadow: 0px 0px 6px /* #41ff00 */ #66ff66; /* Creates a green glow to all text */
+}
+
+/* Background Planet */
+.planet {
+    animation-duration: 3s;
+    animation-name: planetFadeIn;
+    animation-timing-function: ease-out;
+    background-image: linear-gradient(to right, #DEDEDE , grey);
+    border-radius: 50%;
+    height: 900px;
+    position: fixed;
+    right: -500px;
+    top: 0;
+    width: 900px;
+    z-index: 3;
+}
+/* Background Ring */
+.ring {
+    animation-duration: 5s;
+    animation-name: ringFadeIn;
+    animation-timing-function: ease-out;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border: 2px solid #DEDEDE;
+    height: 900px;
+    position: fixed;
+    right: -500px;
+    top: 0;
+    transform: scale(1.4);
+    width: 900px;
+    z-index: 2;
+}

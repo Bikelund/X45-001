@@ -1,0 +1,38 @@
+/* Navigation */
+.menu a {
+    font-size: 30px;
+    color: #DEDEDE;
+    text-decoration: none;
+    animation-name: navFadeIn;
+    animation-duration: 6s;
+}
+.menu {
+    z-index: 4;
+}
+ul > li {
+    list-style: none;
+}
+.nav-active {
+    color: #66ff66 !important;
+    text-shadow: 0px 0px 6px #66ff66;
+}
+#ship {
+    position: fixed;
+    right: 380px;
+    top: 176px;
+}
+#crew {
+    position: fixed;
+    right: 408px;
+    top: 250px;
+}
+#journey {
+    position: fixed;
+    right: 416px;
+    top: 326px;
+}
+#x45-001 {
+    position: fixed;
+    right: 430px;
+    top: 410px;
+}
