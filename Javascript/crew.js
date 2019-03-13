@@ -23,7 +23,6 @@ function hideCrew() {
 
 /* Function that shows the correct crew person on click */
 document.getElementById("crew-list").onclick = function(event) {
-  event.preventDefault(); // Prevents the screen from scrolling to anchor
   if (event.target.tagName === "A") {
     hideCrew();
     let link = event.target.getAttribute("href");
